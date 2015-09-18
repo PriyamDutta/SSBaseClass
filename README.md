@@ -1,6 +1,6 @@
 # SSBaseClass
 
-[![CI Status](http://img.shields.io/travis/shwetsolanki/SSBaseClass.svg?style=flat)](https://travis-ci.org/shwetsolanki/SSBaseClass)
+[![Build Status](https://travis-ci.org/shwetsolanki/SSBaseClass.svg?style=flat)](https://travis-ci.org/shwetsolanki/SSBaseClass)
 [![Version](https://img.shields.io/cocoapods/v/SSBaseClass.svg?style=flat)](http://cocoapods.org/pods/SSBaseClass)
 [![License](https://img.shields.io/cocoapods/l/SSBaseClass.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/cocoapods/p/SSBaseClass.svg?style=flat)](http://cocoapods.org/pods/SSBaseClass)
