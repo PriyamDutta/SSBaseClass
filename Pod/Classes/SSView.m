@@ -30,6 +30,8 @@
     {
         [self addShadow:_cornerRadius color:_shadowColor offset:_shadowOffset opacity:_shadowOpacity radius:_shadowRadius];
     }
+    
+    [self addBorder:_borderWidth color:_borderColor];
 }
 
 @end
