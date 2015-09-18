@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-
+IB_DESIGNABLE
 @interface SSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

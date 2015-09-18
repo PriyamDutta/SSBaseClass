@@ -93,12 +93,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omh-sl-Sw6" customClass="SSExampleLabel">
+                                <rect key="frame" x="20" y="197" width="49" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontKey" value="Font1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorKey" value="Color2"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xbT-YW-FZC" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="20" id="BC8-Lk-mTl"/>
+                            <constraint firstItem="omh-sl-Sw6" firstAttribute="top" secondItem="K54-Jt-iEq" secondAttribute="bottom" constant="8" id="DOF-Uv-18p"/>
                             <constraint firstItem="K54-Jt-iEq" firstAttribute="top" secondItem="xbT-YW-FZC" secondAttribute="bottom" constant="8" id="KRt-IL-ejF"/>
                             <constraint firstItem="xbT-YW-FZC" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="SAU-vr-mMe"/>
+                            <constraint firstItem="omh-sl-Sw6" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="uof-Z0-drL"/>
                             <constraint firstItem="K54-Jt-iEq" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="20" id="yos-8a-kE5"/>
                         </constraints>
                     </view>

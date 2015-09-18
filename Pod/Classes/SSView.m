@@ -19,6 +19,7 @@
 
 -(void)prepareForInterfaceBuilder
 {
+    [super prepareForInterfaceBuilder];
     [self updateView];
 }
 
