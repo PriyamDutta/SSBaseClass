@@ -14,9 +14,15 @@ Boilerplate code for Corner Radius, Shadow, Themed Font and Color for Label, Tex
 ### SSLabel
 ![alt tag](https://raw.github.com/shwetsolanki/SSBaseClass/master/Pod/Screenshots/screenshot2.png)
 
+### Storyboard
+![alt tag](https://raw.github.com/shwetsolanki/SSBaseClass/master/Pod/Screenshots/screenshot3.png)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Set the Custom class for the UIControl to SSView / SSButton / SSLabel, etc and start configuring on IB
+![alt tag](https://raw.github.com/shwetsolanki/SSBaseClass/master/Pod/Screenshots/screenshot4.png)
 
 ## Requirements
 
