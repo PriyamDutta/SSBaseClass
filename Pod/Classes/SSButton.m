@@ -19,6 +19,7 @@
 
 -(void)prepareForInterfaceBuilder
 {
+    [super prepareForInterfaceBuilder];
     [self updateView];
 }
 
@@ -37,21 +38,29 @@
 -(void)setSelected:(BOOL)selected
 {
     [super setSelected:selected];
-    [UIView animateWithDuration:0.20 animations:^{
-        if(self.buttonType == UIButtonTypeCustom)
-            [self.titleLabel.layer setOpacity:1];
-        [self setBackgroundColor:selected ? _selectedColor : _unselectedColor];
-    }];
+    
+    if(_selectedColor)
+    {
+        [UIView animateWithDuration:0.20 animations:^{
+            if(self.buttonType == UIButtonTypeCustom)
+                [self.titleLabel.layer setOpacity:1];
+            [self setBackgroundColor:selected ? _selectedColor : _unselectedColor];
+        }];
+    }
 }
 
 -(void)setHighlighted:(BOOL)highlighted
 {
     [super setHighlighted:highlighted];
-    [UIView animateWithDuration:0.20 animations:^{
-        if(self.buttonType == UIButtonTypeCustom)
-            [self.titleLabel.layer setOpacity:highlighted ? 0.5 : 1.0];
-        [self setBackgroundColor:highlighted ? _highlightedColor : _unselectedColor];
-    }];
+    
+    if(_highlightedColor)
+    {
+        [UIView animateWithDuration:0.20 animations:^{
+            if(self.buttonType == UIButtonTypeCustom)
+                [self.titleLabel.layer setOpacity:highlighted ? 0.5 : 1.0];
+            [self setBackgroundColor:highlighted ? _highlightedColor : _unselectedColor];
+        }];
+    }
 }
 
 @end

@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3D1042245F2A2DD2F1BE0C0 /* Pods_SSBaseClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0B1C6721FA9ADAC5BE4AA /* Pods_SSBaseClass_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C77421BAC347D003B5914 /* SSExampleLabel.m */; settings = {ASSET_TAGS = (); }; };
 		F6D82C243A6472239D848E40 /* Pods_SSBaseClass_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		BBB9FC59AD781CB8B959B939 /* SSBaseClass.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSBaseClass.podspec; path = ../SSBaseClass.podspec; sourceTree = "<group>"; };
 		D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSBaseClass_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAF48060FD6D22D6D49E9C3 /* Pods-SSBaseClass_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseClass_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseClass_Tests/Pods-SSBaseClass_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EB4C77411BAC347D003B5914 /* SSExampleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleLabel.h; sourceTree = "<group>"; };
+		EB4C77421BAC347D003B5914 /* SSExampleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleLabel.m; sourceTree = "<group>"; };
 		FCFAD757DE2C31134EF23F47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDB377BE60EC463B8C8CEBA1 /* Pods-SSBaseClass_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseClass_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseClass_Tests/Pods-SSBaseClass_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +151,8 @@
 				6003F5A6195388D20070C39A /* SSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				EB4C77411BAC347D003B5914 /* SSExampleLabel.h */,
+				EB4C77421BAC347D003B5914 /* SSExampleLabel.m */,
 			);
 			name = "Example for SSBaseClass";
 			path = SSBaseClass;
@@ -244,7 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SS;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Shwet Solanki";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -391,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SSAppDelegate.m in Sources */,
+				EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */,
 				6003F5A7195388D20070C39A /* SSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -452,6 +458,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -517,6 +524,7 @@
 				INFOPLIST_FILE = "SSBaseClass/SSBaseClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -533,6 +541,7 @@
 				INFOPLIST_FILE = "SSBaseClass/SSBaseClass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,6 +564,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSBaseClass_Example.app/SSBaseClass_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -574,6 +584,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSBaseClass_Example.app/SSBaseClass_Example";
 				WRAPPER_EXTENSION = xctest;
