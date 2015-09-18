@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SSBaseClass_Example', :exclusive => true do
+  pod "SSBaseClass", :path => "../"
+end
+
+target 'SSBaseClass_Tests', :exclusive => true do
+  pod "SSBaseClass", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
