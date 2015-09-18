@@ -1,5 +1,5 @@
 //
-//  SSView.h
+//  SSButton.h
 //  Pods
 //
 //  Created by Shwet Solanki on 18/09/15.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
-@interface SSView : UIView
+@interface SSButton : UIButton
 //Corner Radius
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 
@@ -23,5 +23,10 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable UIColor * shadowColor;
 @property (nonatomic) IBInspectable CGFloat shadowOpacity;
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
+
+//UIControlState Backgroundcolors
+@property (nonatomic) IBInspectable UIColor * unselectedColor;
+@property (nonatomic) IBInspectable UIColor * highlightedColor;
+@property (nonatomic) IBInspectable UIColor * selectedColor;
 
 @end

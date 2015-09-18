@@ -19,4 +19,10 @@
     self.layer.shadowOpacity = shadowOpacity;
     self.layer.shadowRadius = shadowRadius;
 }
+
+-(void)addBorder:(CGFloat)borderWidth color:(UIColor *)borderColor
+{
+    [self.layer setBorderWidth:borderWidth];
+    [self.layer setBorderColor:borderColor.CGColor];
+}
 @end
