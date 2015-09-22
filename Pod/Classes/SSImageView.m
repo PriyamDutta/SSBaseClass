@@ -7,15 +7,32 @@
 //
 
 #import "SSImageView.h"
+#import "UIView+Base.h"
 
 @implementation SSImageView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self updateView];
 }
-*/
+
+-(void)prepareForInterfaceBuilder
+{
+    [super prepareForInterfaceBuilder];
+    [self updateView];
+}
+
+-(void)updateView
+{
+    [self.layer setCornerRadius:_cornerRadius];
+    
+    if(_hasShadow)
+    {
+        [self addShadow:_cornerRadius color:_shadowColor offset:_shadowOffset opacity:_shadowOpacity radius:_shadowRadius];
+    }
+    
+    [self addBorder:_borderWidth color:_borderColor];
+}
 
 @end

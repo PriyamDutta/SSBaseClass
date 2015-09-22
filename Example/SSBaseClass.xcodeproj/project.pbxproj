@@ -23,6 +23,9 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3D1042245F2A2DD2F1BE0C0 /* Pods_SSBaseClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0B1C6721FA9ADAC5BE4AA /* Pods_SSBaseClass_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C77421BAC347D003B5914 /* SSExampleLabel.m */; settings = {ASSET_TAGS = (); }; };
+		EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */; settings = {ASSET_TAGS = (); }; };
+		EB721A691BB1A53B002FEF8C /* SSExampleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */; settings = {ASSET_TAGS = (); }; };
+		EB721A6C1BB1A548002FEF8C /* SSExampleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A6B1BB1A548002FEF8C /* SSExampleTextView.m */; settings = {ASSET_TAGS = (); }; };
 		F6D82C243A6472239D848E40 /* Pods_SSBaseClass_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,11 @@
 		DBAF48060FD6D22D6D49E9C3 /* Pods-SSBaseClass_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseClass_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseClass_Tests/Pods-SSBaseClass_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB4C77411BAC347D003B5914 /* SSExampleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleLabel.h; sourceTree = "<group>"; };
 		EB4C77421BAC347D003B5914 /* SSExampleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleLabel.m; sourceTree = "<group>"; };
+		EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maldives-Island-101.jpg"; sourceTree = "<group>"; };
+		EB721A671BB1A53B002FEF8C /* SSExampleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleTextField.h; sourceTree = "<group>"; };
+		EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleTextField.m; sourceTree = "<group>"; };
+		EB721A6A1BB1A548002FEF8C /* SSExampleTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleTextView.h; sourceTree = "<group>"; };
+		EB721A6B1BB1A548002FEF8C /* SSExampleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleTextView.m; sourceTree = "<group>"; };
 		FCFAD757DE2C31134EF23F47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDB377BE60EC463B8C8CEBA1 /* Pods-SSBaseClass_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseClass_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseClass_Tests/Pods-SSBaseClass_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,9 +158,14 @@
 				6003F5A5195388D20070C39A /* SSViewController.h */,
 				6003F5A6195388D20070C39A /* SSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				EB4C77411BAC347D003B5914 /* SSExampleLabel.h */,
 				EB4C77421BAC347D003B5914 /* SSExampleLabel.m */,
+				EB721A671BB1A53B002FEF8C /* SSExampleTextField.h */,
+				EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */,
+				EB721A6A1BB1A548002FEF8C /* SSExampleTextView.h */,
+				EB721A6B1BB1A548002FEF8C /* SSExampleTextView.m */,
 			);
 			name = "Example for SSBaseClass";
 			path = SSBaseClass;
@@ -283,6 +296,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB721A6C1BB1A548002FEF8C /* SSExampleTextView.m in Sources */,
 				6003F59E195388D20070C39A /* SSAppDelegate.m in Sources */,
+				EB721A691BB1A53B002FEF8C /* SSExampleTextField.m in Sources */,
 				EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */,
 				6003F5A7195388D20070C39A /* SSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
