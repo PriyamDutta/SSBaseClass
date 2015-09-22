@@ -26,15 +26,13 @@
 {
     if(_fontKey)
     {
-        NSString * assertString = [NSString stringWithFormat:@"Invalid Font Key %@",_fontKey];
-        NSAssert(self.fontDictionary[_fontKey], assertString);
+        NSAssert(self.fontDictionary[_fontKey], @"Invalid Font Key %@",_fontKey);
         [self setFont:self.fontDictionary[_fontKey]];
     }
     
     if(_colorKey)
     {
-        NSString * assertString = [NSString stringWithFormat:@"Invalid Color Key %@",_colorKey];
-        NSAssert(self.colorDictionary[_colorKey], assertString);
+        NSAssert(self.colorDictionary[_colorKey], @"Invalid Color Key %@",_colorKey);
         [self setTextColor:self.colorDictionary[_colorKey]];
     }
     
