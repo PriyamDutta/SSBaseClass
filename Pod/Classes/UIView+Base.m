@@ -25,4 +25,9 @@
     [self.layer setBorderWidth:borderWidth];
     [self.layer setBorderColor:borderColor.CGColor];
 }
+
+-(void)updateView
+{
+    
+}
 @end
