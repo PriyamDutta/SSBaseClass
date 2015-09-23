@@ -11,4 +11,5 @@
 @interface UIView (Base)
 -(void)addShadow:(CGFloat)cornerRadius color:(UIColor *)shadowColor offset:(CGSize)shadowOffset opacity:(CGFloat)shadowOpacity radius:(CGFloat)shadowRadius;
 -(void)addBorder:(CGFloat)borderWidth color:(UIColor *)borderColor;
+-(void)updateView;
 @end
