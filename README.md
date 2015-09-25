@@ -35,6 +35,13 @@ it, simply add the following line to your Podfile:
 pod "SSBaseClass"
 ```
 
+Add this to Podfile after Platform to avoid the error `IB Designables: Failed to update auto layout status: Failed to load designables from path (null)`
+```ruby
+platform :ios, '8.0'
+
+use_frameworks!
+```
+
 ## Author
 
 Shwet Solanki, me@shwet.net
