@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "50DE9460C7D2278C23D158955CC77118D03F6D38",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E52EADCD0E9C55020BEDB62CCEC575D5609D540D" : 0,
+    "50DE9460C7D2278C23D158955CC77118D03F6D38" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE0F681B-99E6-41AD-B239-4F97ECD5C694",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E52EADCD0E9C55020BEDB62CCEC575D5609D540D" : "Tripsee\/",
+    "50DE9460C7D2278C23D158955CC77118D03F6D38" : "SSBaseClass\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SSBaseClass",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/SSBaseClass.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:shwetsolanki\/SSBaseClass.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50DE9460C7D2278C23D158955CC77118D03F6D38"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:shwetsolanki\/tripsee-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E52EADCD0E9C55020BEDB62CCEC575D5609D540D"
+    }
+  ]
+}

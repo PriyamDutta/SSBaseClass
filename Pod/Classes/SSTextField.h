@@ -12,6 +12,7 @@ IB_DESIGNABLE
 //Font and Color Theming
 @property (nonatomic) IBInspectable NSString * fontKey;
 @property (nonatomic) IBInspectable NSString * colorKey;
+@property (nonatomic) IBInspectable NSString * placeHolderColorKey;
 
 @property (nonatomic, strong) NSDictionary * fontDictionary;
 @property (nonatomic, strong) NSDictionary * colorDictionary;
@@ -24,5 +25,5 @@ IB_DESIGNABLE
 
 //Border
 @property (nonatomic) IBInspectable CGFloat borderWidth;
-@property (nonatomic) IBInspectable UIColor * borderColor;
+@property (nonatomic) IBInspectable NSString * borderColorKey;
 @end

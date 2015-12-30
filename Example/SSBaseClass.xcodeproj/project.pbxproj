@@ -20,18 +20,19 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B3D1042245F2A2DD2F1BE0C0 /* Pods_SSBaseClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0B1C6721FA9ADAC5BE4AA /* Pods_SSBaseClass_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		EB332E711BB2B34000227EE4 /* SSButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6B1BB2B34000227EE4 /* SSButtonTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB332E721BB2B34000227EE4 /* SSImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6C1BB2B34000227EE4 /* SSImageViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB332E731BB2B34000227EE4 /* SSLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6D1BB2B34000227EE4 /* SSLabelTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB332E741BB2B34000227EE4 /* SSTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6E1BB2B34000227EE4 /* SSTextFieldTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB332E751BB2B34000227EE4 /* SSTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6F1BB2B34000227EE4 /* SSTextViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB332E761BB2B34000227EE4 /* SSViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E701BB2B34000227EE4 /* SSViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C77421BAC347D003B5914 /* SSExampleLabel.m */; settings = {ASSET_TAGS = (); }; };
-		EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */; settings = {ASSET_TAGS = (); }; };
-		EB721A691BB1A53B002FEF8C /* SSExampleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */; settings = {ASSET_TAGS = (); }; };
-		EB721A6C1BB1A548002FEF8C /* SSExampleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A6B1BB1A548002FEF8C /* SSExampleTextView.m */; settings = {ASSET_TAGS = (); }; };
-		F6D82C243A6472239D848E40 /* Pods_SSBaseClass_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B3D1042245F2A2DD2F1BE0C0 /* Pods_SSBaseClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0B1C6721FA9ADAC5BE4AA /* Pods_SSBaseClass_Tests.framework */; };
+		EB332E711BB2B34000227EE4 /* SSButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6B1BB2B34000227EE4 /* SSButtonTests.m */; };
+		EB332E721BB2B34000227EE4 /* SSImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6C1BB2B34000227EE4 /* SSImageViewTests.m */; };
+		EB332E731BB2B34000227EE4 /* SSLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6D1BB2B34000227EE4 /* SSLabelTests.m */; };
+		EB332E741BB2B34000227EE4 /* SSTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6E1BB2B34000227EE4 /* SSTextFieldTests.m */; };
+		EB332E751BB2B34000227EE4 /* SSTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6F1BB2B34000227EE4 /* SSTextViewTests.m */; };
+		EB332E761BB2B34000227EE4 /* SSViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E701BB2B34000227EE4 /* SSViewTests.m */; };
+		EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C77421BAC347D003B5914 /* SSExampleLabel.m */; };
+		EB69525F1C02E73600404D01 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB69525E1C02E73600404D01 /* fontawesome-webfont.ttf */; };
+		EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */; };
+		EB721A691BB1A53B002FEF8C /* SSExampleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */; };
+		EB721A6C1BB1A548002FEF8C /* SSExampleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB721A6B1BB1A548002FEF8C /* SSExampleTextView.m */; };
+		F6D82C243A6472239D848E40 /* Pods_SSBaseClass_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		EB332E701BB2B34000227EE4 /* SSViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSViewTests.m; sourceTree = "<group>"; };
 		EB4C77411BAC347D003B5914 /* SSExampleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleLabel.h; sourceTree = "<group>"; };
 		EB4C77421BAC347D003B5914 /* SSExampleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleLabel.m; sourceTree = "<group>"; };
+		EB69525E1C02E73600404D01 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maldives-Island-101.jpg"; sourceTree = "<group>"; };
 		EB721A671BB1A53B002FEF8C /* SSExampleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleTextField.h; sourceTree = "<group>"; };
 		EB721A681BB1A53B002FEF8C /* SSExampleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleTextField.m; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		6003F593195388D20070C39A /* Example for SSBaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				EB69525E1C02E73600404D01 /* fontawesome-webfont.ttf */,
 				6003F59C195388D20070C39A /* SSAppDelegate.h */,
 				6003F59D195388D20070C39A /* SSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -311,6 +314,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				EB69525F1C02E73600404D01 /* fontawesome-webfont.ttf in Resources */,
 				EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);

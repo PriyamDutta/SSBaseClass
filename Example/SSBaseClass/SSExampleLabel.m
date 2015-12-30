@@ -26,7 +26,7 @@
 {
     self.fontDictionary = @{
                             @"Font1" : [UIFont fontWithName:@"HelveticaNeue" size:20],
-                            @"Font2" : [UIFont fontWithName:@"HelveticaNeue" size:16]
+                            @"Font2" : [UIFont fontWithName:@"HelveticaNeue" size:10]
                             };
     
     self.colorDictionary = @{

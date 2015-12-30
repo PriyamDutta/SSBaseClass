@@ -37,9 +37,17 @@
         [self setTextColor:self.colorDictionary[_colorKey]];
     }
     
+    if(self.placeholder)
+    {
+        UIColor * placeHolderColor = [self.textColor colorWithAlphaComponent:0.5];
+        if(self.placeHolderColorKey)
+            placeHolderColor = self.colorDictionary[_placeHolderColorKey];
+        [self setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName : placeHolderColor}]];
+    }
+    
     [self.layer setCornerRadius:_cornerRadius];
     
-    [self addBorder:_borderWidth color:_borderColor];
+    [self addBorder:_borderWidth color:_borderColorKey colorDict:self.colorDictionary];
 }
 
 - (CGRect)borderRectForBounds:(CGRect)bounds

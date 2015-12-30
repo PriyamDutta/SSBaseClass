@@ -10,12 +10,15 @@
 
 IB_DESIGNABLE
 @interface SSView : UIView
+
+@property (nonatomic, strong) NSDictionary * colorDictionary;
+
 //Corner Radius
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 
 //Border
 @property (nonatomic) IBInspectable CGFloat borderWidth;
-@property (nonatomic) IBInspectable UIColor * borderColor;
+@property (nonatomic) IBInspectable NSString * borderColorKey;
 
 //Shadow
 @property (nonatomic) IBInspectable BOOL hasShadow;
@@ -23,5 +26,15 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable UIColor * shadowColor;
 @property (nonatomic) IBInspectable CGFloat shadowOpacity;
 @property (nonatomic) IBInspectable CGFloat shadowRadius;
+
+//Gradient
+@property (nonatomic) IBInspectable UIColor * gradientStartColor;
+@property (nonatomic) IBInspectable CGPoint gradientStartPoint;
+
+@property (nonatomic) IBInspectable UIColor * gradientMidColor;
+@property (nonatomic) IBInspectable CGFloat gradientMidLocation;
+
+@property (nonatomic) IBInspectable UIColor * gradientEndColor;
+@property (nonatomic) IBInspectable CGPoint gradientEndPoint;
 
 @end

@@ -27,4 +27,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'SSBaseClass' => ['Pod/Assets/*.png']
   }
+  s.dependency 'SZTextView'
 end

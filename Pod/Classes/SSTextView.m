@@ -42,8 +42,13 @@
         self.textContainer.lineFragmentPadding = 0;
     }
     
+    if(_applyPadding)
+    {
+        self.textContainerInset = UIEdgeInsetsMake(_contentInsetY, _contentInsetX, _contentInsetY, _contentInsetX);
+    }
+    
     [self.layer setCornerRadius:_cornerRadius];
-    [self addBorder:_borderWidth color:_borderColor];
+    [self addBorder:_borderWidth color:_borderColorKey colorDict:self.colorDictionary];
 }
 
 @end

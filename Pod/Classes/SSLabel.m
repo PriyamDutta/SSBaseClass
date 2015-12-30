@@ -7,6 +7,9 @@
 //
 
 #import "SSLabel.h"
+#import "UIView+Base.h"
+#import "BaseControl.h"
+#import "NSString+Extras.h"
 
 @implementation SSLabel
 
@@ -36,7 +39,37 @@
         [self setTextColor:self.colorDictionary[_colorKey]];
     }
     
+    [self.layer setMasksToBounds:YES];
+    [self.layer setCornerRadius:_cornerRadius];
+    [self addBorder:_borderWidth color:_borderColorKey colorDict:self.colorDictionary];
+    
+    if(_awesomeFontText)
+    {
+        UIFont * awesomeFont = [BaseControl fontAwesomeWithSize:self.font.pointSize];
+        NSString * text = self.text;
+        NSMutableAttributedString * attributedString = [BaseControl attributedStringWithAwesomeText:_awesomeFontText text:text font:self.font textColor:self.textColor awesomeFontColor:self.textColor];
+        [self setAttributedText:attributedString];
+    }
+    
     [self invalidateIntrinsicContentSize];
+}
+
+-(void)setText:(NSString *)text
+{
+    [super setText:text];
+    [self updateView];
+}
+
+- (void)drawTextInRect:(CGRect)rect {
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(self.contentInsetY, self.contentInsetX, self.contentInsetY, self.contentInsetX))];
+}
+
+-(CGSize)intrinsicContentSize
+{
+    CGSize contentSize = [super intrinsicContentSize];
+    contentSize.width += (self.contentInsetX * 2);
+    contentSize.height += (self.contentInsetY * 2);
+    return contentSize;
 }
 
 @end
