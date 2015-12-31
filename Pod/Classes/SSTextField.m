@@ -8,19 +8,28 @@
 
 #import "SSTextField.h"
 #import "UIView+Base.h"
+#import "SSTheme.h"
 
 @implementation SSTextField
 
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    [self setup];
     [self updateView];
 }
 
 -(void)prepareForInterfaceBuilder
 {
     [super prepareForInterfaceBuilder];
+    [self setup];
     [self updateView];
+}
+
+-(void)setup
+{
+    self.fontDictionary = [[SSTheme currentTheme] fontDictionary];
+    self.colorDictionary = [[SSTheme currentTheme] colorDictionary];
 }
 
 -(void)updateView

@@ -28,4 +28,5 @@ Pod::Spec.new do |s|
     'SSBaseClass' => ['Pod/Assets/*.png']
   }
   s.dependency 'SZTextView'
+  s.dependency 'HexColors'
 end

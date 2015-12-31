@@ -8,6 +8,7 @@
 
 #import "SSImageView.h"
 #import "UIView+Base.h"
+#import "SSTheme.h"
 
 @interface SSImageView ()
 {
@@ -20,13 +21,20 @@
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    [self setup];
     [self updateView];
 }
 
 -(void)prepareForInterfaceBuilder
 {
     [super prepareForInterfaceBuilder];
+    [self setup];
     [self updateView];
+}
+
+-(void)setup
+{
+    self.colorDictionary = [[SSTheme currentTheme] colorDictionary];
 }
 
 -(void)updateView

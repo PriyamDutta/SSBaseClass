@@ -10,19 +10,28 @@
 #import "UIView+Base.h"
 #import "BaseControl.h"
 #import "NSString+Extras.h"
+#import "SSTheme.h"
 
 @implementation SSLabel
 
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    [self setup];
     [self updateView];
 }
 
 -(void)prepareForInterfaceBuilder
 {
     [super prepareForInterfaceBuilder];
+    [self setup];
     [self updateView];
+}
+
+-(void)setup
+{
+    self.fontDictionary = [[SSTheme currentTheme] fontDictionary];
+    self.colorDictionary = [[SSTheme currentTheme] colorDictionary];
 }
 
 -(void)updateView
@@ -45,9 +54,7 @@
     
     if(_awesomeFontText)
     {
-        UIFont * awesomeFont = [BaseControl fontAwesomeWithSize:self.font.pointSize];
-        NSString * text = self.text;
-        NSMutableAttributedString * attributedString = [BaseControl attributedStringWithAwesomeText:_awesomeFontText text:text font:self.font textColor:self.textColor awesomeFontColor:self.textColor];
+        NSMutableAttributedString * attributedString = [BaseControl attributedStringWithAwesomeText:_awesomeFontText text:self.text font:self.font textColor:self.textColor awesomeFontColor:self.textColor];
         [self setAttributedText:attributedString];
     }
     
