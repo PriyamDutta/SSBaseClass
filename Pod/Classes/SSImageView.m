@@ -40,7 +40,6 @@
 -(void)updateView
 {
     [self.layer setCornerRadius:_cornerRadius];
-    [self addObserver:self forKeyPath:@"bounds" options:0 context:nil];
     
     if(_hasShadow)
     {
@@ -52,8 +51,15 @@
     if(_backgroundImage)
         [self setBackgroundColor:[UIColor colorWithPatternImage:_backgroundImage]];
     
+    [self updateGradient];
+}
+
+-(void)updateGradient
+{
     if(_gradientStartColor && _gradientEndColor)
     {
+        [self addObserver:self forKeyPath:@"bounds" options:0 context:nil];
+        
         NSArray * colors;
         NSArray * locations;
         
@@ -68,19 +74,21 @@
             colors = @[(id)_gradientStartColor.CGColor, (id)_gradientEndColor.CGColor];
         }
         
-        gradientLayer = [CAGradientLayer layer];
-        gradientLayer.colors = colors;
-        gradientLayer.locations = locations;
-        gradientLayer.frame = self.bounds;
+        if(gradientLayer == nil)
+        {
+            gradientLayer = [CAGradientLayer layer];
+            gradientLayer.colors = colors;
+            gradientLayer.locations = locations;
+            gradientLayer.frame = self.bounds;
+            
+            [self.layer insertSublayer:gradientLayer atIndex:0];
+        }
         
         if(!(CGPointEqualToPoint(_gradientStartPoint, CGPointZero) && CGPointEqualToPoint(_gradientEndPoint, CGPointZero)))
         {
             gradientLayer.startPoint = _gradientStartPoint;
             gradientLayer.endPoint = _gradientEndPoint;
         }
-        
-        
-        [self.layer insertSublayer:gradientLayer atIndex:0];
     }
 }
 
@@ -132,6 +140,14 @@
 
 -(void)dealloc
 {
-    [self removeObserver:self forKeyPath:@"bounds" context:nil];
+    @try {
+        [self removeObserver:self forKeyPath:@"bounds" context:nil];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {
+        
+    }
 }
 @end

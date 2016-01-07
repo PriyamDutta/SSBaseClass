@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
-
 @protocol ThemeConfigProtocol <NSObject>
 
 +(NSDictionary *)colors;

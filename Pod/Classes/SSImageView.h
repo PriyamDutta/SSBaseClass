@@ -39,5 +39,6 @@
 @property (nonatomic) IBInspectable UIColor * gradientEndColor;
 @property (nonatomic) IBInspectable CGPoint gradientEndPoint;
 
+-(void)updateGradient;
 
 @end
