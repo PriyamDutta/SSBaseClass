@@ -21,12 +21,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B3D1042245F2A2DD2F1BE0C0 /* Pods_SSBaseClass_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A0B1C6721FA9ADAC5BE4AA /* Pods_SSBaseClass_Tests.framework */; };
-		EB332E711BB2B34000227EE4 /* SSButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6B1BB2B34000227EE4 /* SSButtonTests.m */; };
-		EB332E721BB2B34000227EE4 /* SSImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6C1BB2B34000227EE4 /* SSImageViewTests.m */; };
-		EB332E731BB2B34000227EE4 /* SSLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6D1BB2B34000227EE4 /* SSLabelTests.m */; };
-		EB332E741BB2B34000227EE4 /* SSTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6E1BB2B34000227EE4 /* SSTextFieldTests.m */; };
-		EB332E751BB2B34000227EE4 /* SSTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E6F1BB2B34000227EE4 /* SSTextViewTests.m */; };
-		EB332E761BB2B34000227EE4 /* SSViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB332E701BB2B34000227EE4 /* SSViewTests.m */; };
 		EB4C77431BAC347D003B5914 /* SSExampleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C77421BAC347D003B5914 /* SSExampleLabel.m */; };
 		EB69525F1C02E73600404D01 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB69525E1C02E73600404D01 /* fontawesome-webfont.ttf */; };
 		EB721A661BB1A3B6002FEF8C /* Maldives-Island-101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB721A651BB1A3B6002FEF8C /* Maldives-Island-101.jpg */; };
@@ -72,12 +66,6 @@
 		BBB9FC59AD781CB8B959B939 /* SSBaseClass.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSBaseClass.podspec; path = ../SSBaseClass.podspec; sourceTree = "<group>"; };
 		D6FB187CF1A8FE8F4CCE7E29 /* Pods_SSBaseClass_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSBaseClass_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAF48060FD6D22D6D49E9C3 /* Pods-SSBaseClass_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSBaseClass_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSBaseClass_Tests/Pods-SSBaseClass_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EB332E6B1BB2B34000227EE4 /* SSButtonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSButtonTests.m; sourceTree = "<group>"; };
-		EB332E6C1BB2B34000227EE4 /* SSImageViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSImageViewTests.m; sourceTree = "<group>"; };
-		EB332E6D1BB2B34000227EE4 /* SSLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLabelTests.m; sourceTree = "<group>"; };
-		EB332E6E1BB2B34000227EE4 /* SSTextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTextFieldTests.m; sourceTree = "<group>"; };
-		EB332E6F1BB2B34000227EE4 /* SSTextViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTextViewTests.m; sourceTree = "<group>"; };
-		EB332E701BB2B34000227EE4 /* SSViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSViewTests.m; sourceTree = "<group>"; };
 		EB4C77411BAC347D003B5914 /* SSExampleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSExampleLabel.h; sourceTree = "<group>"; };
 		EB4C77421BAC347D003B5914 /* SSExampleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSExampleLabel.m; sourceTree = "<group>"; };
 		EB69525E1C02E73600404D01 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
@@ -198,12 +186,6 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EB332E6B1BB2B34000227EE4 /* SSButtonTests.m */,
-				EB332E6C1BB2B34000227EE4 /* SSImageViewTests.m */,
-				EB332E6D1BB2B34000227EE4 /* SSLabelTests.m */,
-				EB332E6E1BB2B34000227EE4 /* SSTextFieldTests.m */,
-				EB332E6F1BB2B34000227EE4 /* SSTextViewTests.m */,
-				EB332E701BB2B34000227EE4 /* SSViewTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -441,12 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB332E721BB2B34000227EE4 /* SSImageViewTests.m in Sources */,
-				EB332E751BB2B34000227EE4 /* SSTextViewTests.m in Sources */,
-				EB332E711BB2B34000227EE4 /* SSButtonTests.m in Sources */,
-				EB332E731BB2B34000227EE4 /* SSLabelTests.m in Sources */,
-				EB332E761BB2B34000227EE4 /* SSViewTests.m in Sources */,
-				EB332E741BB2B34000227EE4 /* SSTextFieldTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

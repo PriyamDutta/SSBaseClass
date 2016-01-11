@@ -115,7 +115,7 @@
 {
     if (_increaseTappableArea) {
         if (CGRectContainsPoint(CGRectInset(self.bounds, -10, -10), point))
-            return self;
+            return YES;
     }
     
     return [super pointInside:point withEvent:event];
