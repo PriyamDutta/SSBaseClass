@@ -70,17 +70,26 @@ static SSTheme * themeInstance = nil;
 
 -(void)applyTheme
 {
-    [[UINavigationBar appearance] setTintColor:_basicThemeDict[@"Navbar"][@"BarColor"]];
-    [[UINavigationBar appearance] setBarTintColor:_basicThemeDict[@"Navbar"][@"BarTintColor"]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{
+    if(_basicThemeDict[@"Navbar"][@"BarColor"])
+        [[UINavigationBar appearance] setTintColor:_basicThemeDict[@"Navbar"][@"BarColor"]];
+    
+    if(_basicThemeDict[@"Navbar"][@"BarTintColor"])
+        [[UINavigationBar appearance] setBarTintColor:_basicThemeDict[@"Navbar"][@"BarTintColor"]];
+    
+    if(_basicThemeDict[@"Navbar"][@"TitleFont"] && _basicThemeDict[@"Navbar"][@"BarColor"])
+        [[UINavigationBar appearance] setTitleTextAttributes:@{
                                                            NSFontAttributeName : _basicThemeDict[@"Navbar"][@"TitleFont"],
                                                            NSForegroundColorAttributeName : _basicThemeDict[@"Navbar"][@"BarColor"]
                                                            }];
     
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName : _basicThemeDict[@"BarItem"][@"TitleFont"]} forState:UIControlStateNormal];
+    if(_basicThemeDict[@"BarItem"][@"TitleFont"])
+        [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName : _basicThemeDict[@"BarItem"][@"TitleFont"]} forState:UIControlStateNormal];
     
-    [[UITabBar appearance] setTintColor:_basicThemeDict[@"Tabbar"][@"BarColor"]];
-    [[UITabBar appearance] setBarTintColor:_basicThemeDict[@"Tabbar"][@"BarTintColor"]];
+    if(_basicThemeDict[@"Tabbar"][@"BarColor"])
+        [[UITabBar appearance] setTintColor:_basicThemeDict[@"Tabbar"][@"BarColor"]];
+    
+    if(_basicThemeDict[@"Tabbar"][@"BarTintColor"])
+        [[UITabBar appearance] setBarTintColor:_basicThemeDict[@"Tabbar"][@"BarTintColor"]];
 }
 
 - (UIFont *)fontForKey:(NSString *)key
