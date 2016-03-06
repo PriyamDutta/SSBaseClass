@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SSBaseClass"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Basic Customisation for UIControls"
   s.description      = <<-DESC
                         Using IB_Designable and IBInspectable to custom UIControls using boilerplate code.
@@ -27,4 +27,6 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'SSBaseClass' => ['Pod/Assets/*.png']
   }
+  s.dependency 'SZTextView'
+  s.dependency 'HexColors'
 end

@@ -8,19 +8,28 @@
 
 #import "SSTextField.h"
 #import "UIView+Base.h"
+#import "SSTheme.h"
 
 @implementation SSTextField
 
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    [self setup];
     [self updateView];
 }
 
 -(void)prepareForInterfaceBuilder
 {
     [super prepareForInterfaceBuilder];
+    [self setup];
     [self updateView];
+}
+
+-(void)setup
+{
+    self.fontDictionary = [[SSTheme currentTheme] fontDictionary];
+    self.colorDictionary = [[SSTheme currentTheme] colorDictionary];
 }
 
 -(void)updateView
@@ -37,9 +46,17 @@
         [self setTextColor:self.colorDictionary[_colorKey]];
     }
     
+    if(self.placeholder)
+    {
+        UIColor * placeHolderColor = [self.textColor colorWithAlphaComponent:0.5];
+        if(self.placeHolderColorKey)
+            placeHolderColor = self.colorDictionary[_placeHolderColorKey];
+        [self setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName : placeHolderColor}]];
+    }
+    
     [self.layer setCornerRadius:_cornerRadius];
     
-    [self addBorder:_borderWidth color:_borderColor];
+    [self addBorder:_borderWidth color:_borderColorKey colorDict:self.colorDictionary];
 }
 
 - (CGRect)borderRectForBounds:(CGRect)bounds

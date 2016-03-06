@@ -7,19 +7,31 @@
 //
 
 #import "SSLabel.h"
+#import "UIView+Base.h"
+#import "BaseControl.h"
+#import "NSString+Extras.h"
+#import "SSTheme.h"
 
 @implementation SSLabel
 
 -(void)awakeFromNib
 {
     [super awakeFromNib];
+    [self setup];
     [self updateView];
 }
 
 -(void)prepareForInterfaceBuilder
 {
     [super prepareForInterfaceBuilder];
+    [self setup];
     [self updateView];
+}
+
+-(void)setup
+{
+    self.fontDictionary = [[SSTheme currentTheme] fontDictionary];
+    self.colorDictionary = [[SSTheme currentTheme] colorDictionary];
 }
 
 -(void)updateView
@@ -36,7 +48,35 @@
         [self setTextColor:self.colorDictionary[_colorKey]];
     }
     
+    [self.layer setMasksToBounds:YES];
+    [self.layer setCornerRadius:_cornerRadius];
+    [self addBorder:_borderWidth color:_borderColorKey colorDict:self.colorDictionary];
+    
+    if(_awesomeFontText)
+    {
+        NSMutableAttributedString * attributedString = [BaseControl attributedStringWithAwesomeText:_awesomeFontText text:self.text font:self.font textColor:self.textColor awesomeFontColor:self.textColor];
+        [self setAttributedText:attributedString];
+    }
+    
     [self invalidateIntrinsicContentSize];
+}
+
+-(void)setText:(NSString *)text
+{
+    [super setText:text];
+    [self updateView];
+}
+
+- (void)drawTextInRect:(CGRect)rect {
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(self.contentInsetY, self.contentInsetX, self.contentInsetY, self.contentInsetX))];
+}
+
+-(CGSize)intrinsicContentSize
+{
+    CGSize contentSize = [super intrinsicContentSize];
+    contentSize.width += (self.contentInsetX * 2);
+    contentSize.height += (self.contentInsetY * 2);
+    return contentSize;
 }
 
 @end
